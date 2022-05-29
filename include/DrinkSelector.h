@@ -14,13 +14,13 @@ private:
   BaseDrink *mDrink = nullptr;
   int mUserDrink ;
   void printMenu();
-  void setDrink(drinkNS::softDrink);
+  
   void clearDrink();
 public:
   DrinkSelector();
   ~DrinkSelector();
 
-
+  void setDrink(drinkNS::softDrink);
   void pollDrink();
   std::string getSelectedDrinkName();
   void printDrinkIngredients();
